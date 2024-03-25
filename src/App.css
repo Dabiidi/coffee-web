@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-screen font-serif text-gray-900 bg-gray-100;
+  }
+}
+@layer components {
+  /* header */
+  .header {
+    @apply h-[10vh] flex items-center px-10 py-4 md:px-20 text-lg justify-between;
+  }
+  .header-logo {
+    @apply font-black md:text-2xl;
+  }
+  .header-account {
+    @apply hidden font-medium md:block;
+  }
+  .header-user {
+    @apply block md:hidden;
+  }
+  .header > ul {
+    @apply text-justify flex-1 hidden space-x-5 md:flex bg-red-600;
+  }
+
+  main {
+    @apply relative h-[90vh];
+  }
+}

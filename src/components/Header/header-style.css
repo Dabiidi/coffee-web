@@ -1,0 +1,36 @@
+/* Header.css */
+
+.header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Change to flex to make it horizontal */
+}
+
+.header-menu li {
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline; /* Add this to display li items inline */
+}
+
+.header-account {
+  font-weight: bold;
+  cursor: pointer;
+}
