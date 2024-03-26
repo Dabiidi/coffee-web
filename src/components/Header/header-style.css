@@ -1,36 +1,79 @@
-/* Header.css */
-
-.header {
-  background-color: #ffffff;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding: 1rem 2.5rem;
+  justify-content: space-between;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .header-logo {
-  font-size: 24px;
-  font-weight: bold;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex; /* Change to flex to make it horizontal */
+ul {
+  display: flex;
+  gap: 2rem;
 }
 
-.header-menu li {
-  margin-right: 20px;
-  cursor: pointer;
-  display: inline; /* Add this to display li items inline */
+ul li {
+  list-style: none;
 }
 
 .header-account {
-  font-weight: bold;
-  cursor: pointer;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+.header-user {
+  display: block;
+}
+
+.header > ul {
+  justify-content: center;
+  flex: 1;
+  gap: 1.25rem;
+}
+
+.dropdown-menu-content {
+  z-index: 1100;
+}
+
+.main {
+  position: relative;
+  height: 90vh;
+  padding-top: 10vh;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 5px 10px;
+  }
+
+  ul {
+    gap: 1rem;
+  }
+
+  ul li {
+    font-size: 0.9em;
+  }
+  .header-account {
+    font-weight: 500;
+    font-size: 0.9em;
+    z-index: 1000;
+  }
+
+  .header-logo {
+    padding: 0.5rem;
+  }
 }
